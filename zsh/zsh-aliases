@@ -1,0 +1,44 @@
+# Alias list
+case "$(uname -s)" in
+
+Darwin)
+	# echo 'Mac OS X'
+	alias ls='ls -G'
+	;;
+
+Linux)
+	alias ls='ls --color=auto'
+	;;
+
+CYGWIN* | MINGW32* | MSYS* | MINGW*)
+	# echo 'MS Windows'
+	;;
+*)
+	# echo 'Other OS'
+	;;
+esac
+
+# alias ls='ls -FG' # List with colour and folder indication
+alias l='ls -lFh' # List size, show type, human readable
+alias l.='ls -dG .*' # List only hidden files/folders
+alias la='ls -lAFh' # Long List, show almost all, show type, human readable
+alias lr='ls -tRFh' # Sort by date, recursive, show type, human readable
+alias lt='ls -ltFh' # Long,Sort by date, show type, human readable
+
+alias rm='rm -i'
+alias cp='cp -i'
+
+#terminal apps
+alias vtop='vtop --theme brew' #monokai
+alias python='python3'
+
+#youtube
+alias ytm="yt-dlp --extract-audio --audio-format mp3"
+alias ytv="yt-dlp -f bestvideo+bestaudio"
+
+#git
+alias status="git status"
+alias push="git push origin"
+alias pull="git pull origin"
+alias commit="git commit -m"
+alias add="git add ."
