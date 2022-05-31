@@ -1,5 +1,5 @@
 # Run Neofetch on startup
-neofetch
+#neofetch
 
 # Key bind to accept auto-suggest
 bindkey '^ ' autosuggest-accept
